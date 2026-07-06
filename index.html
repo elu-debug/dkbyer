@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <title>WeatherMapDK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+  <!-- MarkerCluster -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"/>
+
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <style>
+    #map {
+      height: 90vh;
+      width: 100%;
+    }
+
+    #topbar {
+      padding: 10px;
+      font-family: Arial;
+      background: #f5f5f5;
+    }
+
+    input {
+      padding: 6px;
+      width: 250px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="topbar">
+  🔎 Søg by:
+  <input id="searchBox" placeholder="Skriv fx Aarhus..." />
+</div>
+
+<div id="map"></div>
+
+<!-- libs -->
+<!-- Leaflet (SKAL først) -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
+
+<!-- dine scripts -->
+<script src="js/weather.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
